@@ -1,0 +1,1 @@
+Micro-library to implement page transitions in a React application

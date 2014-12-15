@@ -1,0 +1,22 @@
+.content > .table-view:first-child {
+    margin-top: -2px;
+}
+
+.hidden {
+    opacity: 0;
+}
+
+.page1 .content {
+    background-color: #103754;
+}
+
+.page2 .content{
+    padding-top: 100px;
+    background-color: #222222;
+    text-align: center;
+}
+
+.media-object {
+    height: 150px;
+    width: 150px;
+}
