@@ -12,7 +12,7 @@ var PageSlider = {
             pages = this.state.pages,
             l = pages.length,
             transitionEndHandler = function() {
-                pageEl.removeEventListener('webkitTransitionEnd', transitionEndHandler);
+                pageEl.removeEventListener('transitionend', transitionEndHandler);
                 pages.shift();
                 this.setState({pages: pages});
             }.bind(this),
@@ -23,7 +23,7 @@ var PageSlider = {
                 } else if (l > 0) {
                     pages[l - 1].props.position = "center transition";
                     this.setState({pages: pages, animating: false});
-                    pageEl.addEventListener('webkitTransitionEnd', transitionEndHandler);
+                    pageEl.addEventListener('transitionend', transitionEndHandler);
                 }
             };
 
